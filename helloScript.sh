@@ -1,3 +1,10 @@
 #! /bin/bash
 
-cat > file.txt
+:'cat << kreativ
+this is hello crative text
+add another line
+kreativ'
+
+#condtional statements
+
+
