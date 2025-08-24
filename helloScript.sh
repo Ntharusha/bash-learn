@@ -43,3 +43,48 @@ fi
 comment
 
 
+#Loops
+
+: <<'comment'
+number=1
+while [ $number -lt 10 ]
+do
+    echo "$number"
+    ((number++))
+done
+comment
+
+
+: <<'comment'
+for i in {1..9}
+do
+    echo "$i"
+done
+comment
+
+
+: <<'comment'
+for i in {1..9..2} {start..ending..increment}
+do
+    echo "$i"
+done
+comment
+
+: <<'comment'
+number=1
+until [ $number -gt 10 ]
+do
+    echo "$number"
+    ((number++))
+done
+comment
+
+: <<'comment'
+for(( i=0; i<=10; i++ ))
+do
+    if [ $i -eq 5 ]
+    then
+        echo "Found 5"
+    fi
+done
+comment
